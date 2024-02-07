@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz - NLW Expert</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1>Teste seus conhecimentos</h1>
+        <img src="logo.svg" alt="Logo do NLW Expert" id="logo">
+        <h1 id="titulo">Teste seus conhecimentos</h1>
+        <hr>
 
         <div id="quiz"></div>
-        
+        <br><br><br>
         <template>
-        <div class="quiz-item">
-        <h3>
-        Pergunta 01
-        </h3>
-        <dl>
-        <dt>
-            <input type="radio" name="item" value="0">
-            <span>Resposta A</span>
-        </dt>
-        </dl>
-        </div>
+            <div class="quiz-item">
+                <div class="pergunta">
+                    <div id="num_pergunta">0</div>
+                    <span id="text_pergunta">Pergunta 0</span>
+                </div>
+                <dl class="respostas">
+                    <dt class="resposta">
+                        <input type="radio" name="item" value="0">
+                        <span id="text_resposta">Resposta A</span>
+                    </dt>
+                </dl>
+            </div>
         </template>
+
         <div id="acertos">
-            <strong>Acertos</strong>
+            <strong>Acertos:</strong>
             <span>0/10</span>
         </div>
-
-        <script src="script.js"></script>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

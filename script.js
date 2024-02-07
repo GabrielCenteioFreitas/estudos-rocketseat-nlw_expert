@@ -101,11 +101,12 @@ mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas
 
 for(const item of perguntas) {
   const quizItem = template.content.cloneNode(true)
-  quizItem.querySelector('h3').textContent = item.pergunta
+  quizItem.querySelector('#text_pergunta').textContent = item.pergunta
+  quizItem.querySelector('#num_pergunta').textContent = perguntas.indexOf(item)+1
 
   for(let resposta of item.respostas) {
     const dt = quizItem.querySelector('dl dt').cloneNode(true)
-    dt.querySelector('span').textContent = resposta
+    dt.querySelector('#text_resposta').textContent = resposta
     dt.querySelector('input').setAttribute('name', 'pergunta-' + perguntas.indexOf(item))
     dt.querySelector('input').value = item.respostas.indexOf(resposta)
 
