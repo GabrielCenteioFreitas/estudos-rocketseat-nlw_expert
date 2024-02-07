@@ -88,7 +88,7 @@ const perguntas = [
         "Através do método 'addEventListener'"
       ],
       correta: 2
-    },
+    }
   ];
 
 const quiz = document.querySelector('#quiz')
@@ -124,6 +124,6 @@ for(const item of perguntas) {
   }
 
   quizItem.querySelector('dl dt').remove()
-
+  
   quiz.appendChild(quizItem)
 }
