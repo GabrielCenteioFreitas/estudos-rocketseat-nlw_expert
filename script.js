@@ -117,7 +117,7 @@ for(const item of perguntas) {
       if(estaCorreta) {
         corretas.add(perguntas.indexOf(item))
       }
-      mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas
+      mostrarTotal.textContent = `${corretas.size} de ${totalDePerguntas}`
     }
 
     quizItem.querySelector('dl').appendChild(dt)
