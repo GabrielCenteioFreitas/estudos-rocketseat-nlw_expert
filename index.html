@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - NLW Expert</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 </head>
 <body>
     <main>
         <div id="topo">
-            <img src="./assets/logo.svg" alt="Logo do NLW Expert" id="logo">
+            <img id="logo" src="./assets/logo-dark.svg" alt="Logo do NLW Expert">
+            <div class="changeTheme" onclick="changeTheme()">
+                <button id="changeTheme-button" class="changeTheme-button">
+                  <img id="changeTheme-image" class="changeTheme-image"
+                      src="./assets/sun.png">
+                </button>
+            </div>
             <h1 id="titulo">Teste seus conhecimentos</h1>
             <hr>
         </div>

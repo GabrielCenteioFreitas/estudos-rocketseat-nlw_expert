@@ -127,3 +127,19 @@ for(const item of perguntas) {
   
   quiz.appendChild(quizItem)
 }
+
+function changeTheme() {
+  const html = document.documentElement
+  const image = document.getElementById("changeTheme-image");
+  const logo = document.getElementById("logo")
+
+  html.classList.toggle('light')
+
+  if(html.classList.contains('light')) {
+    image.setAttribute('src', './assets/moon.png')
+    logo.setAttribute('src', './assets/logo-light.svg')
+  }else{
+    image.setAttribute('src', './assets/sun.png')
+    logo.setAttribute('src', './assets/logo-dark.svg')
+  }
+}
